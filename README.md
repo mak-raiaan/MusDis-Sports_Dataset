@@ -58,10 +58,15 @@ We propose a novel multimodal framework called **ViSK-GAT** for posture risk cla
 - **Skeletal coordinates** using a hybrid backbone
 - **Fine-Grained Attention Module** for enhanced feature selection
 - **Multimodal Geometric Correspondence Module** for aligning modalities
+---
 
-This design enables robust assessment of ergonomic risk by Utilizing both pose geometry and visual cues.
+This design enables robust assessment of ergonomic risk by utilizing both pose geometry and visual cues.
+
+**🚨 CODE AND WEIGHTS WILL BE PUBLISHED UPON PUBLICATION**
 
 ---
+
+
 
 ## Citation
 
