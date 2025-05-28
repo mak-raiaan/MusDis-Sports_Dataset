@@ -48,7 +48,7 @@ Responses will be provided within 2 business days.
 
 We propose a novel multimodal framework called **ViSK-GAT** for posture risk classification.
 <p align="center">
-  <img src="https://github.com/mak-raiaan/MusDis-Sports_Dataset/blob/main/Pictures/OverallModel.png" alt="ViSK-GAT" width="1000"/>
+  <img src="https://github.com/mak-raiaan/MusDis-Sports_Dataset/blob/main/Pictures/OverallModel.png" alt="ViSK-GAT">
 </p>
 
 ### Description
