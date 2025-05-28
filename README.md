@@ -65,6 +65,18 @@ This design enables robust assessment of ergonomic risk by Utilizing both pose g
 
 ## Citation
 
-*Please cite this dataset and framework in any publications derived from it. A formal citation will be provided upon publication.*
+*Please cite this dataset and framework in any publications derived from it. A formal citation will be provided upon publication, now please cite the dataset.*
+
+```bibtex
+@article{rahman2025visk,
+  title={ViSK-GAT: Fine-Grained Attention and Geometric Correspondence for Musculoskeletal Risk Classification in Athletes Using Multimodal Visual and Skeletal Features},
+  author={Rahman, Md. Abdur and Khan Raiaan, Mohaimenul Azam and Shermin, Tamanna and Azam, Sami},
+  journal={GitHub Repository},
+  volume={1},
+  pages={1--1},
+  year={2025},
+  publisher={GitHub},
+  note={\url{https://github.com/mak-raiaan/MusDis-Sports_Dataset}}
+}
 
 ---
