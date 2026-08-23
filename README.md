@@ -43,13 +43,13 @@ Responses will be provided within 2 business days.
 
 ## Classification Framework: ViSK-GAT
 
-Online version can be access at:
+Online version is at the following DOI:
 
 [![Elsevier](https://img.shields.io/badge/Elsevier-10.1016%2Fj.compeleceng.2026.111281-FF6C00?logo=elsevier&logoColor=white)](https://doi.org/10.1016/j.compeleceng.2026.111281)
 
-Model Diagam:
+Model Diagram:
 <p align="center">
-  <img src="Pictures/OverallModel.png" alt="ViSK-GAT">
+  <img src="./Pictures/OverallModel.png" alt="ViSK-GAT">
 </p>
 
 **ViSK-GAT** integrates:
@@ -95,8 +95,7 @@ The main model is available as `models.MultimodalModel`. The training helpers ar
 
 
 ## Citation
-Paper accepted on 1 Jun 2026 in 
-*Computers and Electrical Engineering*
+Paper accepted on 1 Jun 2026 in *Computers and Electrical Engineering*
 
 ```bibtex
 @article{rahman2026fine,
