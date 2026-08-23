@@ -47,41 +47,65 @@ Responses will be provided within 2 business days.
 ## Classification Framework: ViSK-GAT
 
 We propose a novel multimodal framework called **ViSK-GAT** for posture risk classification.
+
+[![Elsevier](https://img.shields.io/badge/Elsevier-10.1016%2Fj.compeleceng.2026.111281-FF6C00?logo=elsevier&logoColor=white)](https://doi.org/10.1016/j.compeleceng.2026.111281)
 <p align="center">
-  <img src="https://github.com/mak-raiaan/MusDis-Sports_Dataset/blob/main/Pictures/OverallModel.png" alt="ViSK-GAT">
+  <img src="Pictures/OverallModel.png" alt="ViSK-GAT">
 </p>
 
-### Description
-
 **ViSK-GAT** integrates:
-- **Visual features** from RGB images
-- **Skeletal coordinates** using a hybrid backbone
-- **Fine-Grained Attention Module** for enhanced feature selection
-- **Multimodal Geometric Correspondence Module** for aligning modalities
----
+> **Visual features** from RGB images
 
-This design enables robust assessment of ergonomic risk by utilizing both pose geometry and visual cues.
+> **Skeletal coordinates** using a hybrid backbone
 
-**🚨 CODE AND WEIGHTS WILL BE PUBLISHED UPON PUBLICATION**
+> **Fine-Grained Attention Module** for enhanced feature selection
 
----
+> **Multimodal Geometric Correspondence Module** for aligning modalities
 
+## Directories
+
+```text
+.
+├── models/
+│   ├── __init__.py
+│   ├── image_encoder.py
+│   ├── residual_block.py
+│   ├── fgam.py
+│   ├── mgcm.py
+│   ├── transformer_block.py
+│   └── multimodal_model.py
+├── src/
+│   ├── __init__.py
+│   ├── data_generation.py
+│   ├── data_loader.py
+│   ├── reba_scoring.py
+│   ├── train.py
+│   └── evaluate.py
+├── notebook/
+│   └── PostureCode.ipynb
+├── Pictures/
+├── requirements.txt
+└── README.md
+```
+
+###  Model Data Flow
+
+`CoordinateImageDataset` loads an RGB image and its 66 skeletal coordinate values; `CustomImageEncoder` extracts a sequence of visual tokens from the image; `FineGrainedAttentionModule` refines the visual tokens using self-attention `MultimodalGeometricCorrespondenceModule` aligns visual tokens with the 33 `(x, y)` joint tokens; `LightweightTransformerBlock` refines the fused multimodal representation. And the classifier returns logits for the eight REBA risk classes.
+
+The main model is available as `models.MultimodalModel`. The training helpers are defined in `src.train`, and evaluation metrics are available through `src.evaluate.evaluate_predictions`.
 
 
 ## Citation
-
-*Please cite this dataset and framework in any publications derived from it. A formal citation will be provided upon publication, now please cite the dataset.*
+Paper accepted on 1 Jun 2026 in 
+*Computers and Electrical Engineering*
 
 ```bibtex
-@article{rahman2025visk,
-  title={ViSK-GAT: Fine-Grained Attention and Geometric Correspondence for Musculoskeletal Risk Classification in Athletes Using Multimodal Visual and Skeletal Features},
-  author={Rahman, Md. Abdur and Khan Raiaan, Mohaimenul Azam and Shermin, Tamanna and Azam, Sami},
-  journal={GitHub Repository},
-  volume={1},
-  pages={1--1},
-  year={2025},
-  publisher={GitHub},
-  note={\url{https://github.com/mak-raiaan/MusDis-Sports_Dataset}}
+@article{rahman2026fine,
+    title={A fine-grained attention and geometric correspondence model for musculoskeletal risk classification in athletes using multimodal visual and skeletal features},
+    author={Rahman, Md Abdur and Karim, Wasimul and Raiaan, Mohaimenul Azam Khan and Shermin, Tamanna and Islam, Md Rafiqul and Hussain, Mukhtar and Azam, Sami},
+    journal={Computers and Electrical Engineering},
+    volume={138},
+    pages={111281},
+    year={2026},
+    publisher={Elsevier}
 }
-
----
