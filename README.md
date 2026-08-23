@@ -25,8 +25,6 @@ Each image in the dataset contains **66 skeletal coordinates**, offering detaile
 
 Higher REBA classes (e.g., Class 4 - 8) indicate riskier postures associated with a greater likelihood of musculoskeletal disorders.
 
----
-
 ## Dataset Access
 
 The dataset is available here:  
@@ -42,13 +40,14 @@ To request access:
 
 Responses will be provided within 2 business days.
 
----
 
 ## Classification Framework: ViSK-GAT
 
-We propose a novel multimodal framework called **ViSK-GAT** for posture risk classification.
+Online version can be access at:
 
 [![Elsevier](https://img.shields.io/badge/Elsevier-10.1016%2Fj.compeleceng.2026.111281-FF6C00?logo=elsevier&logoColor=white)](https://doi.org/10.1016/j.compeleceng.2026.111281)
+
+Model Diagam:
 <p align="center">
   <img src="Pictures/OverallModel.png" alt="ViSK-GAT">
 </p>
