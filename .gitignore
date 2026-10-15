@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+ImageDataset/
+*.csv
+*.pth
+*.pt
+*.log
